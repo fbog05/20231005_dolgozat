@@ -15,7 +15,9 @@ import java.util.ArrayList;
 import models.Employee;
 
 public class MainConsole {
+    
     public static void showData(ArrayList<Employee> empList){
+
         for(Employee employee:empList){
             System.out.printf("Név: %s\n", employee.getNev());
             System.out.printf("Település: %s\n", employee.getTelepules());

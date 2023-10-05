@@ -16,10 +16,12 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Filereader {
+
     final String FILENAME = "filbt.txt";
     ArrayList<Employee> empList = new ArrayList<>();
 
     public ArrayList<Employee> loadData(){
+
         try{
             tryLoadData();
         }
@@ -27,11 +29,12 @@ public class Filereader {
             System.err.println("A fájl nem található!");
             System.err.println(e.getMessage());
         }
-        
+
         return empList;
     }
 
     public ArrayList<Employee> tryLoadData() throws FileNotFoundException{
+        
         File file = new File(FILENAME);
         Scanner sc = new Scanner(file, "utf-8");
 

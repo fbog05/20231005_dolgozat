@@ -18,8 +18,8 @@ import viewers.MainConsole;
 
 public class MainController {
     
-
     public MainController(){
+
         Filereader filereader = new Filereader();
         ArrayList<Employee> empList = filereader.loadData();
         MainConsole.showData(empList);
