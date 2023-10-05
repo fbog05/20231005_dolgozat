@@ -27,6 +27,7 @@ public class Filereader {
             System.err.println("A fájl nem található!");
             System.err.println(e.getMessage());
         }
+        
         return empList;
     }
 
@@ -44,6 +45,7 @@ public class Filereader {
             emp.setFizetes(Integer.parseInt(lineArray[4]));
             this.empList.add(emp);
         }
+
         return empList;
     }
 }
